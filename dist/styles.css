@@ -92,3 +92,19 @@ footer{border-color:var(--line);color:#716577}.footer-brand{color:var(--text)}
 @media(max-width:1020px){.hero-modern{grid-template-columns:1fr;min-height:auto;padding-top:62px}.hero-copy{padding-bottom:0}.hero-modern h1{max-width:760px;font-size:clamp(3.7rem,9vw,5.8rem)}.hero-visual{min-height:540px}.hero-visual img{width:min(100%,780px)}.hero-scroll{display:none}.contact{padding:55px 45px}}
 @media(max-width:620px){.header{min-height:82px}.hero-modern{padding:52px 0 32px}.hero-modern h1{font-size:clamp(3rem,14vw,4.4rem);margin:25px 0}.hero-copy>p{font-size:1rem}.hero-actions{align-items:flex-start;flex-direction:column;gap:12px}.hero-proof{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hero-visual{min-height:400px;margin-top:12px}.hero-visual img{width:118%}.visual-tag{font-size:.68rem}.tag-one{top:12%;left:0}.tag-two{right:-2%;bottom:14%}.services{gap:12px}.services article,.services article+article{min-height:auto;padding:24px}.contact{width:calc(100% - 26px);margin-block:36px;padding:46px 24px;border-radius:16px}}
 @media(prefers-reduced-motion:reduce){.hero-visual img,.visual-tag,.visual-halo,.visual-node,.hero-scroll span{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+
+/* Refined purple-led brand palette: yellow is reserved for non-text accents. */
+a:hover{color:var(--purple)}
+a:focus-visible{outline-color:#6f438f}
+.eyebrow,
+em,
+.portfolio .eyebrow{color:var(--purple)}
+.digital-benefits h3{color:#fff}
+.digital-benefits li::before{color:#dfcfeb}
+.manual-benefits h3{color:var(--purple)}
+.manual-benefits li::before{color:#8f73a6}
+.contact .eyebrow{color:#d8c7e4}
+.contact h2 em{color:#e5d8ee}
+.contact .button{background:#eadff2;color:var(--purple-deep)}
+.contact .button:hover{background:#fff;color:var(--purple-deep)}
+.contact .email-link:hover{color:#fff}
