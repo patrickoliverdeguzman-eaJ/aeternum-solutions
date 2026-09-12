@@ -15,16 +15,25 @@
     <nav aria-label="Main navigation"><a href="#solutions">Solutions</a><a href="#portfolio">Portfolio</a><a class="nav-contact" href="#contact">Contact us <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-top"><span class="eyebrow">SOFTWARE SOLUTIONS FOR YOUR BUSINESS</span><span class="edition">AETERNUM / DIGITAL SOLUTIONS</span></div>
-      <h1 id="hero-title">Digital systems.<br><span>Built for <em>your business.</em></span></h1>
-      <div class="hero-bottom"><p>We develop software as a service (SaaS) platforms, business management systems, and websites that simplify daily operations and support your business goals.</p><a class="button" href="https://www.facebook.com/aeternumhq" target="_blank" rel="noopener noreferrer">Discuss your project <span aria-hidden="true">↗</span></a></div>
-      <div class="system-panel" aria-label="Our approach: connect your business, simplify operations, and support growth">
-        <div class="panel-heading"><span>CONNECTED BUSINESS OPERATIONS</span><span>THE AETERNUM APPROACH</span></div>
-        <div class="system-flow"><div class="flow-start"><span class="mini-label">YOUR BUSINESS</span><div class="input-row">People <span>+</span></div><div class="input-row">Processes <span>+</span></div><div class="input-row">Data <span>+</span></div></div><span class="connector" aria-hidden="true">→</span><div class="flow-core"><span class="core-symbol" aria-hidden="true">∞</span><strong>One connected system.</strong><span>Built around your workflow.</span></div><span class="connector" aria-hidden="true">→</span><div class="flow-end"><span class="mini-label">BUSINESS BENEFITS</span><p><span aria-hidden="true">✓</span> Streamlined workflows</p><p><span aria-hidden="true">✓</span> Organized information</p><p><span aria-hidden="true">✓</span> Informed decisions</p></div></div>
-        <div class="panel-footer"><span>CONNECTING PEOPLE, PROCESSES, AND DATA</span><span aria-hidden="true">01 — 03</span></div>
+    <section class="hero hero-modern wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><i aria-hidden="true"></i> SAAS · BUSINESS SYSTEMS · WEB</span>
+        <h1 id="hero-title">Build a smarter way to <em>run your business.</em></h1>
+        <p>We design and develop connected digital systems that simplify daily work, organize information, and give your business room to grow.</p>
+        <div class="hero-actions"><a class="button" href="mailto:aeternumsolution@gmail.com">Start a project <span aria-hidden="true">↗</span></a><a class="text-link" href="#solutions">Explore our services <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-proof" aria-label="Aeternum capabilities"><span><b>01</b> Tailored systems</span><span><b>02</b> Scalable platforms</span><span><b>03</b> Clear workflows</span></div>
       </div>
+      <div class="hero-visual" aria-label="An animated isometric view of connected software, data, and cloud systems">
+        <div class="visual-grid" aria-hidden="true"></div>
+        <div class="visual-halo" aria-hidden="true"></div>
+        <img src="assets/aeternum-isometric-system.png" alt="Isometric illustration of a connected SaaS platform with dashboards, databases, and cloud services" width="1536" height="1024">
+        <span class="visual-tag tag-one"><b>LIVE</b> Connected data</span>
+        <span class="visual-tag tag-two"><b>∞</b> Built to scale</span>
+        <span class="visual-node node-one" aria-hidden="true"></span><span class="visual-node node-two" aria-hidden="true"></span>
+      </div>
+      <div class="hero-scroll"><span aria-hidden="true"></span> Scroll to explore</div>
     </section>
+    <div class="capability-strip" aria-hidden="true"><div>SAAS DEVELOPMENT <span>✦</span> BUSINESS AUTOMATION <span>✦</span> DATA MANAGEMENT <span>✦</span> WEB DEVELOPMENT <span>✦</span> SAAS DEVELOPMENT <span>✦</span> BUSINESS AUTOMATION <span>✦</span></div></div>
     <section class="solutions wrap section" id="solutions" aria-labelledby="solutions-title">
       <div class="section-heading"><span class="eyebrow">01 / OUR SERVICES</span><h2 id="solutions-title">Solutions for<br>the way you work.</h2><p>We develop digital solutions around your requirements, whether you are launching a software product or improving internal operations.</p></div>
       <div class="services"><article><span class="service-num">01</span><h3>SaaS development</h3><p>Bring your software product to life with a web-based platform designed around your users, services, and business model.</p><span class="service-tag">SOFTWARE PLATFORMS</span></article><article><span class="service-num">02</span><h3>Business management</h3><p>Centralize records, track sales and inventory, and simplify everyday transactions with a system tailored to your operations.</p><span class="service-tag">OPERATIONAL SYSTEMS</span></article><article><span class="service-num">03</span><h3>Web development</h3><p>Establish a professional online presence with a website that communicates your services and helps customers connect with your business.</p><span class="service-tag">BUSINESS WEBSITES</span></article></div>
@@ -40,5 +49,11 @@
     <section class="contact wrap section" id="contact" aria-labelledby="contact-title"><span class="eyebrow">04 / CONTACT US</span><div class="contact-content"><h2 id="contact-title">Discuss your<br><em>next project.</em></h2><div><p>Share your project requirements and business objectives. Contact our team to discuss a solution that fits your needs.</p><a class="button" href="https://www.facebook.com/aeternumhq" target="_blank" rel="noopener noreferrer">Message us on Facebook <span aria-hidden="true">↗</span></a><a class="email-link" href="mailto:aeternumsolution@gmail.com">aeternumsolution@gmail.com <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
   <footer class="wrap"><a class="footer-brand" href="#">Aeternum Solutions</a><span>© 2026 Aeternum Solutions</span><a href="https://www.facebook.com/aeternumhq" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a></footer>
+  <script>
+    const reveal = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); reveal.unobserve(entry.target); }
+    }), { threshold: 0.12 });
+    document.querySelectorAll('.section, .services article, .benefits-grid article').forEach((element) => { element.classList.add('reveal'); reveal.observe(element); });
+  </script>
 </body>
 </html>
